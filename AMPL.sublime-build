@@ -2,6 +2,11 @@
     "cmd": ["ampl", "${file_path}/${file_base_name}.run"],
     "file_regex": "^(?:[(]file )*[ ]*(...*?), line ([0-9]*)",
     "selector": "source.ampl",
+        
+    "windows":
+    {
+        "cmd": ["ampl", "${file_path}\\\\${file_base_name}.run"]
+    },
 
     "osx":
     {
